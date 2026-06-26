@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# SQLite temporary files
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
