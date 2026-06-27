@@ -1,70 +1,86 @@
 # Grand Couch POS System
 
-A modern Windows Forms Point of Sale (POS) application built with **C#**, **.NET**, and **SQLite** for managing inventory, sales, customer debts, and business reports.
-
-## Features
-
-### Inventory Management
-
-* Add new products
-* Update product information
-* Delete products
-* Search inventory
-* Track available stock
-* Prevent negative inventory
-
-### Billing & Sales
-
-* Create customer invoices
-* Automatic total calculation
-* Checkout process
-* Supports debt purchases
-* Validates available stock before completing sales
-
-### Debt Management
-
-* View all unpaid customer debts
-* Mark debts as paid
-* Automatically update inventory and records
-* Track outstanding balances
-
-### Reports
-
-* View sales reports
-* Monitor inventory status
-* Business performance overview
-
-### User Interface
-
-* Clean modern dashboard
-* Rounded buttons
-* Dark theme
-* Simple navigation
-* Easy-to-use layout
+A desktop **Point of Sale (POS)** application developed with **C#**, **Windows Forms**, and **SQLite**. The system is designed for small businesses to manage inventory, process sales, track customer debts, and generate business reports through a clean and intuitive interface.
 
 ---
 
-# Technologies Used
+## Features
+
+### 📦 Inventory Management
+
+* Add, edit, and delete products
+* Search inventory instantly
+* Monitor stock levels
+* Prevent negative inventory
+
+### 🛒 Billing & Sales
+
+* Create customer invoices
+* Automatic price and total calculation
+* Process cash and debt purchases
+* Validate stock availability before checkout
+
+### 💳 Debt Management
+
+* View outstanding customer debts
+* Mark debts as paid
+* Automatically update payment records
+* Track unpaid balances
+
+### 📊 Reports
+
+* View sales reports
+* Monitor inventory status
+* Analyze business performance
+
+### 🎨 User Interface
+
+* Modern Windows Forms interface
+* Dark theme
+* Rounded buttons
+* Simple and intuitive navigation
+
+---
+
+## Technologies Used
 
 * C#
-* Windows Forms (.NET)
+* .NET Windows Forms
 * SQLite
 * Microsoft.Data.Sqlite
 
 ---
 
-# Project Structure
+## Screenshots
 
-```
-GrandCouchPOS/
+### Home Screen
+
+![Home](theGrandCoachScreenShots/homePage.png)
+
+### Inventory Management
+
+![Inventory](theGrandCoachScreenShots/inventoryPage.png)
+
+### Billing
+
+![Billing](theGrandCoachScreenShots/billingPage.png)
+
+### Debt Management
+
+![Debt](theGrandCoachScreenShots/debtPage.png)
+
+### Reports
+
+![Reports](theGrandCoachScreenShots/reportsPage.png)
+
+---
+
+## Project Structure
+
+```text
+GrandCouchPOS
 │
 ├── HomeForm
-│   ├── Inventory
-│   ├── Billing
-│   ├── Reports
-│   ├── Debt Management
-│   └── Exit
-│
 ├── InventoryForm
 ├── BillingForm
 ├── DebtForm
@@ -76,28 +92,9 @@ GrandCouchPOS/
 
 ---
 
-# Application Flow
+## Database
 
-```
-Home Screen
-     │
-     ├── Inventory Management
-     │
-     ├── Billing
-     │      ├── Checkout
-     │      └── Debt Sale
-     │
-     ├── Reports
-     │
-     └── Debt Management
-             └── Mark as Paid
-```
-
----
-
-# Database
-
-The application uses a local **SQLite** database (`inventory.db`) to store:
+The application uses a local **SQLite** database to store:
 
 * Products
 * Inventory quantities
@@ -107,36 +104,34 @@ The application uses a local **SQLite** database (`inventory.db`) to store:
 
 ---
 
-# Validation
+## Validation
 
-The application includes several validation checks:
+The application includes several validation features:
 
-* Prevents selling more items than available in stock.
-* Prevents debt transactions that exceed available inventory.
-* Updates inventory automatically after successful sales.
-* Validates user input before saving data.
+* Prevents selling more products than are available in stock
+* Prevents debt transactions when inventory is insufficient
+* Automatically updates inventory after successful sales
+* Validates user input before saving records
 
 ---
 
-# Installation
+## Installation
 
-1. Clone the repository.
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/GrandCouchPOS.git
+git clone https://github.com/walidjohn02/grand-couch-pos.git
 ```
 
 2. Open the solution in Visual Studio.
 
 3. Restore NuGet packages.
 
-4. Build the project.
-
-5. Run the application.
+4. Build and run the project.
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 * User authentication
 * Customer management
@@ -146,54 +141,33 @@ git clone https://github.com/yourusername/GrandCouchPOS.git
 * Dashboard analytics
 * Product images
 * Multi-user support
-* Cloud database synchronization
-* Backup and restore functionality
+* Cloud database integration
+* Automatic backup and restore
 
 ---
 
-# Screenshots
+## What I Learned
 
-You can add screenshots here after uploading them.
-
-```
-/Screenshots
-    Home.png
-    Inventory.png
-    Billing.png
-    Debt.png
-    Reports.png
-```
-
-Example:
-
-```
-![Home Screen](Screenshots/Home.png)
-```
-
----
-
-# Learning Objectives
-
-This project was developed to strengthen knowledge in:
+Developing this project strengthened my understanding of:
 
 * Object-Oriented Programming (OOP)
-* Windows Forms development
+* Windows Forms application development
 * SQLite database integration
 * CRUD operations
 * Event-driven programming
-* Database validation
+* Input validation
 * Desktop application architecture
 
 ---
 
-# License
+## License
 
-This project is intended for educational and portfolio purposes.
+This project is available for educational and portfolio purposes.
 
 ---
 
-# Author
+## Author
 
 **Walid John**
 
-Feel free to fork the project, submit improvements, or use it as a learning resource.
+If you have suggestions or improvements, feel free to fork the repository or open an issue.
